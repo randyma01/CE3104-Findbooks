@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "518410877830",
+    "firebase_url": "https://findbooks-1d305.firebaseio.com",
+    "project_id": "findbooks-1d305",
+    "storage_bucket": "findbooks-1d305.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518410877830:android:1ce9891776686c2a",
+        "android_client_info": {
+          "package_name": "com.projectbookapp.findbooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518410877830-ueoj1a8agt7frq9gmmea8glr1vuq115j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWgohXdBuMJUr2NyTNtSmdCj7dMMu-wPo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518410877830-ueoj1a8agt7frq9gmmea8glr1vuq115j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

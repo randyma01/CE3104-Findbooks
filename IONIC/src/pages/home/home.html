@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'HOME_PAGE.TITLEPAG' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+      <img src="https://static.pexels.com/photos/46274/pexels-photo-46274.jpeg" style="width:250px;height:120px;"/>
+
+      <ion-card-content>
+        <ion-card-title>
+          {{ 'HOME_PAGE.TITLE' | translate }}
+        </ion-card-title>
+        <p>
+          {{ 'HOME_PAGE.BODY' | translate }}
+        </p>
+      </ion-card-content>
+
+      <ion-item>
+        <ion-icon name='ios-book-outline' item-left style="color: #d03e84"></ion-icon>
+        Books
+      </ion-item>
+
+      <button ion-button block color="light" (click)="goToView()">{{ 'HOME_PAGE.BUTTON' | translate }}</button>
+    
+    </ion-card>
+</ion-content>

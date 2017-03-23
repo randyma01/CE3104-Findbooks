@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ 'CONTACT_PAGE.TITLE' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="goToOk()">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>{{ 'CONTACT_PAGE.FIRSTNAME' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="input.firstName"  name="firstName" value=""  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'CONTACT_PAGE.LASTNAME' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="input.lastName"  name="lastName" value=""  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'CONTACT_PAGE.PHONENUMBER' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="input.phoneNumber"  name="phoneNumber" value=""  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'CONTACT_PAGE.ADDRRES' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="input.addrres"  name="addrres" value="" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'CONTACT_PAGE.SELECTCOUNTRY' | translate }}</ion-label>
+        <ion-select [(ngModel)]="input.country" [ngModelOptions]="{standalone: true}">
+          <ion-option value="United States">United States</ion-option>
+          <ion-option value="Brazil">Brazil</ion-option>
+          <ion-option value="Canada">Canada</ion-option>
+          <ion-option value="Chile">Chile</ion-option>
+          <ion-option value="China">China</ion-option>
+          <ion-option value="Colombia">Colombia</ion-option>
+          <ion-option value="Costa Rica">Costa Rica</ion-option>
+          <ion-option value="Cuba">Cuba</ion-option>
+          <ion-option value="Ecuador">Ecuador</ion-option>
+          <ion-option value="France">France</ion-option>
+          <ion-option value="Germany">Germany</ion-option>
+          <ion-option value="India">India</ion-option>
+          <ion-option value="Italy">Italy</ion-option>
+          <ion-option value="Portugal">Portugal</ion-option>
+          <ion-option value="Spain">Spain</ion-option>
+          <ion-option value="Turkey">Turkey</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'CONTACT_PAGE.GENDER' | translate }}</ion-label>
+        <ion-select [(ngModel)]="input.gender" [ngModelOptions]="{standalone: true}">
+          <ion-option value="Female">{{ 'CONTACT_PAGE.FEMALE' | translate }}</ion-option>
+          <ion-option value="Male">{{ 'CONTACT_PAGE.MALE' | translate }}</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </form>
+
+  <!--Buutons-->
+  <button ion-button block color="light" (click)="goToOk()">Ok</button>
+
+</ion-content>

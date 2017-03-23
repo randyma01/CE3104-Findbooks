@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ 'BUY_PAGE.TITLEPAG' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--<form (ngSubmit)="goToOk()"> -->
+    <ion-item>
+      <ion-label fixed> {{ 'BUY_PAGE.SELECTGENDER' | translate }}</ion-label>
+      <ion-select [(ngModel)]="gender"  (ionChange)="onchange()" >
+        <ion-option *ngFor="let gender of genderBooks" value={{gender}}>{{gender}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed> {{ 'BUY_PAGE.SELECTPRICE' | translate }}</ion-label>
+      <ion-select [(ngModel)]="price" [ngModelOptions]="{standalone: true}">
+        <ion-option value="5">$5</ion-option>
+        <ion-option value="6">$6</ion-option>
+        <ion-option value="7">$7</ion-option>
+        <ion-option value="8">$8</ion-option>
+        <ion-option value="9">$9</ion-option>
+      </ion-select>
+    </ion-item>
+ <!-- </form> -->
+
+  <ion-label fixed>Books</ion-label>
+
+  <ion-card *ngFor="let data of dataBook">
+        <img src="{{data.photo}}" style="width:150px;height:150px;"/>
+
+      <ion-card-content>
+        <ion-card-title>
+          {{data.title}}
+        </ion-card-title>
+        <p>
+           {{ 'BUY_PAGE.AUTHOR' | translate }}: {{data.author}}
+        </p>
+        <p>
+           {{ 'BUY_PAGE.LANGUAGE' | translate }}: {{data.language}}
+        </p>
+      </ion-card-content>
+
+      <ion-item>
+        <ion-icon name='ios-book-outline' item-left style="color: #d03e30"></ion-icon>
+         {{ 'BUY_PAGE.PRICE' | translate }}
+        <ion-badge item-right>$ {{data.price}}</ion-badge>
+      </ion-item>
+
+      <button ion-button block color="light" (click)="sendMessage(data.email, data.Pnumber)"> {{ 'BUY_PAGE.IINERESTED' | translate }}</button>
+    
+    </ion-card>
+</ion-content>

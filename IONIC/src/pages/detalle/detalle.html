@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+         {{ 'DETALLE_PAGE.TITLEPAG' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label fixed>Books</ion-label>
+
+  <ion-card *ngFor="let data of dataBook">
+        <img src="{{data.photo}}" style="width:150px;height:150px;"/>
+
+      <ion-card-content>
+        <ion-card-title>
+          {{data.title}}
+        </ion-card-title>
+        <p>
+             {{ 'DETALLE_PAGE.AUTHOR' | translate }}: {{data.author}}
+        </p>
+        <p>
+             {{ 'DETALLE_PAGE.LANGUAGE' | translate }}: {{data.language}}
+        </p>
+      </ion-card-content>
+
+      <ion-item>
+        <ion-icon name='ios-book-outline' item-left style="color: #d03e30"></ion-icon>
+           {{ 'DETALLE_PAGE.PRICE' | translate }}
+        <ion-badge item-right>$ {{data.price}}</ion-badge>
+      </ion-item>
+
+      <button ion-button block color="light" (click)="vendido(data.title)"> {{ 'DETALLE_PAGE.SELL' | translate }}</button>
+    
+    </ion-card>
+</ion-content>

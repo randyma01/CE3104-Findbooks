@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ 'SELL_PAGE.TITLPAG' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<form (ngSubmit)="goToSubmit()">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>{{ 'SELL_PAGE.TITLE' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="input.title"  name="title" value=""  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'SELL_PAGE.AUTHOR' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="input.author"  name="author" value=""  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'SELL_PAGE.GENDER' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="input.gender"  name="gender" value=""  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'SELL_PAGE.LANGUAGE' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="input.language"  name="language" value="" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'SELL_PAGE.YEAR' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="input.year"  name="year" value="" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'SELL_PAGE.PRICE' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="input.price"  name="price" value="" ></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-label fixed>
+          Latitude:  <p>{{latitude}}</p>
+    </ion-label>
+     <ion-label fixed>
+          Longitude:  <p>{{longitude}}</p>
+    </ion-label>
+  </form>
+
+    <ion-label fixed>{{ 'SELL_PAGE.BOOKPICTURE' | translate }}</ion-label>
+
+    <ion-label fixed>
+      <img src="{{urlPicture}}" style="width:150x;height:150px;"/>
+    </ion-label>
+
+  <button ion-button color="dark" round icon-left (click)="onTakePhoto()"><ion-icon name="md-camera"></ion-icon>{{ 'SELL_PAGE.TAKEPHOTO' | translate }}</button>
+ 
+  <button ion-button color="secondary" round icon-left (click)="goToGetLocation()"><ion-icon name="md-locate"></ion-icon>{{ 'SELL_PAGE.GETLOCATION' | translate }}</button>
+
+  <button ion-button block color="light" (click)="goToSubmit()">{{ 'SELL_PAGE.SUBMIT' | translate }}</button>
+  
+</ion-content>

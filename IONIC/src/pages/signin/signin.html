@@ -1,0 +1,33 @@
+<!--
+  Generated template for the Signin page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>  {{ 'SIGNIN_PAGE.TITLEPAG' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="goToOk()">
+        <ion-list>
+          <ion-item>
+            <ion-label fixed>  {{ 'SIGNIN_PAGE.EMAIL' | translate }}</ion-label>
+            <ion-input type="email" [(ngModel)]="input.Email" name="Email" value=""  ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label fixed>  {{ 'SIGNIN_PAGE.PASSWORD' | translate }}</ion-label>
+            <ion-input type="password" [(ngModel)]="input.Password"  [ngModelOptions]="{standalone: true}"></ion-input>
+          </ion-item>
+        </ion-list> 
+    </form>
+
+  <!--Buutons-->
+  <button ion-button block color="light" (click)="goToOk()">Ok</button>
+
+</ion-content>

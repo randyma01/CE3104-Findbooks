@@ -1,0 +1,84 @@
+{
+	"WELCOME_PAGE":{
+		"TITLE": "Welcome to BookApp",
+		"SIGNIN": "Signin",
+		"LOGINGOOGLE": "Login with Google Account",
+		"LOGINFACEBOOK": "Login with Facebook Account",
+		"LOGIN": "Login",
+		"EMAIL": "Email",
+		"PASSWORD": "Password"
+	},
+	"CONTACT_PAGE":{
+		"TITLE": "Contact Completed",
+		"FIRSTNAME": "First Name",
+		"LASTNAME": "Last Name",
+		"PHONENUMBER": "Phone Number",
+		"ADDRRES": "Addrres",
+		"SELECTCOUNTRY": "Select Country",
+		"GENDER": "Gender",
+		"MALE": "Male",
+		"FEMALE": "Female"
+	},
+	"HOME_PAGE":{
+		"TITLEPAG": "Home",
+		"TITLE": "My Library",
+		"BODY": "See published books",
+		"BUTTON": "View"
+	},
+	"BUY_PAGE":{
+		"TITLEPAG": "Buy Book",
+		"SELECTGENDER": "Select Gender",
+		"SELECTPRICE": "Select Price $",
+		"PRICE": "Price",
+		"AUTHOR": "Author",
+		"LANGUAGE": "Language",
+		"IINERESTED": "I'm interested",
+		"LOADER": "Loadong Books...",
+		"EMAILSUBJET": "BookApp Buy Book",
+		"EMAILBODY": "A user is interested in a book that he published.\nThe email of the interested user is: ",
+		"ALERTTITLE": "Contact User",
+		"ALERTSUBTITLE": "Phone Number User: ",
+		"ALERTRATINGTITLE": "User rating"
+	},
+	"SELL_PAGE":{
+		"TITLPAG": "Sell Book",
+		"TITLE": "Title",
+		"AUTHOR": "Author",
+		"GENDER": "Gender",
+		"LANGUAGE": "Language",
+		"YEAR": "Year",
+		"PRICE": "Price $",
+		"BOOKPICTURE": "Book Picture",
+		"TAKEPHOTO": "Take Photo",
+		"GETLOCATION": "Get Location",
+		"SUBMIT": "Submit",
+		"LOADER": "Please wait..."
+	},
+	"ACCOUNT_PAGE":{
+		"TITLEPAG": "Account",
+		"USER": "User",
+		"FIRSTNAME": "First Name",
+		"LASTNAME": "Last Name",
+		"PHONENUMBER": "Phone Number",
+		"EMAIL": "Email",
+		"LOGOUT": "Logout"
+	},
+	"TABS_PAGE":{
+		"HOME": "Home",
+		"BUYBOOK": "Buy Book",
+		"SELLBOOK": "Sell Book",
+		"ACCOUNT": "Account"
+	},
+	"SIGNIN_PAGE":{
+		"TITLEPAG": "Signin",
+		"EMAIL": "Email",
+		"PASSWORD": "Password"	
+	},
+	"DETALLE_PAGE":{
+		"TITLEPAG": "My Books",
+		"AUTHOR": "Author",
+		"LANGUAGE": "Language",
+		"PRICE": "Price",
+		"SELL": "Already sold"
+	}
+}

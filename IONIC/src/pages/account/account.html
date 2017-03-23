@@ -1,0 +1,44 @@
+<!--
+  Generated template for the Account page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> {{ 'ACCOUNT_PAGE.TITLEPAG' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      {{ 'ACCOUNT_PAGE.USER' | translate }}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        {{ 'ACCOUNT_PAGE.FIRSTNAME' | translate }}:  {{Firstname}}
+      </ion-item>
+      <ion-item>
+        {{ 'ACCOUNT_PAGE.LASTNAME' | translate }}:  {{Lastname}}
+      </ion-item>
+       <ion-item>
+        {{ 'ACCOUNT_PAGE.EMAIL' | translate }}:  {{email}}
+      </ion-item>
+       <ion-item>
+        Photo: <img src="{{photoUrl}}" alt="Perfil"  style="width:70px;height:70px;">
+      </ion-item>
+       <ion-item>
+        {{ 'ACCOUNT_PAGE.PHONENUMBER' | translate }}:  {{Phonenumber}}
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <button ion-button block color="danger" (click)="goToLogout()">{{ 'ACCOUNT_PAGE.LOGOUT' | translate }}</button>
+  </ion-item>
+
+</ion-content>

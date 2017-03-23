@@ -1,0 +1,84 @@
+{
+	"WELCOME_PAGE":{
+		"TITLE": "Bienvenido a BookApp",
+		"SIGNIN": "Crear Cuenta",
+		"LOGINGOOGLE": "Iniciar sesión con Google",
+		"LOGINFACEBOOK": "Iniciar sesión con Facebook",
+		"LOGIN": "Iniciar sesión",
+		"EMAIL": "Correo",
+		"PASSWORD": "Contraseña"
+	},
+	"CONTACT_PAGE":{
+		"TITLE": "Completar Contacto",
+		"FIRSTNAME": "Nombre",
+		"LASTNAME": "Apellido",
+		"PHONENUMBER": "Numero de telefono",
+		"ADDRRES": "Dirección",
+		"SELECTCOUNTRY": "Pais",
+		"GENDER": "Genero",
+		"MALE": "Hombre",
+		"FEMALE": "Mujer"	
+	},
+	"HOME_PAGE":{
+		"TITLEPAG": "Casa",
+		"TITLE": "Mi Libreria",
+		"BODY": "Ver libros publicados",
+		"BUTTON": "Ver"
+	},
+	"BUY_PAGE":{
+		"TITLEPAG": "Comprar Libro",
+		"SELECTGENDER": "Seleccione Genero",
+		"SELECTPRICE": "Seleccione Precio $",
+		"PRICE": "Precio",
+		"AUTHOR": "Autor",
+		"LANGUAGE": "Lenguaje", 
+		"IINERESTED": "Me interesa",
+		"LOADER": "Cargando Libros...",
+		"EMAILSUBJET": "BookApp Compra de Libro",
+		"EMAILBODY": "Un usuario esta interesado por un libro que publico.\nEl correo del usuario interesado es: ",
+		"ALERTTITLE": "Conctacto de Usuario",
+		"ALERTSUBTITLE": "Numero de telefono: ",
+		"ALERTRATINGTITLE": "Calificacion del Usuario"
+	},
+	"SELL_PAGE":{
+		"TITLPAG": "Vender Libro",
+		"TITLE": "Titulo",
+		"AUTHOR": "Autor",
+		"GENDER": "Genero",
+		"LANGUAGE": "Lenguaje",
+		"YEAR": "Año",
+		"PRICE": "Precio $",
+		"BOOKPICTURE": "Imagen del Libro",
+		"TAKEPHOTO": "Tomar Foto",
+		"GETLOCATION": "Obtener Ubicacion",
+		"SUBMIT": "Enviar",
+		"LOADER": "Espere..."
+	},
+	"ACCOUNT_PAGE":{
+		"TITLEPAG": "Cuenta",
+		"USER": "Usuario",
+		"FIRSTNAME": "Nombre",
+		"LASTNAME": "Apellido",
+		"PHONENUMBER": "Numero Telefono",
+		"EMAIL": "Correo",
+		"LOGOUT": "Cerrar sesión"
+	},
+	"TABS_PAGE":{
+		"HOME": "Casa",
+		"BUYBOOK": "Comprar Libro",
+		"SELLBOOK": "Vender Libro",
+		"ACCOUNT": "Cuenta"
+	},
+	"SIGNIN_PAGE":{
+		"TITLEPAG": "Crear Cuenta",
+		"EMAIL": "Correo",
+		"PASSWORD": "Contraseña"	
+	},
+	"DETALLE_PAGE":{
+		"TITLEPAG": "Mis libros",
+		"AUTHOR": "Autor",
+		"LANGUAGE": "Lenguaje",
+		"PRICE": "Precio",
+		"SELL": "Ya vendido"
+	}
+}
